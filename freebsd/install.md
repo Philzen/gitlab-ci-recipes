@@ -48,8 +48,6 @@ cd ~/gitlab-ci
 mkdir -p tmp/pids
 mkdir tmp/sockets
 
-
-
 # Install dependencies
 gem install bundler
 
@@ -87,5 +85,6 @@ exit
 Save yourself the hassle of try-and-error with the linux based script and give [this rc.d script](rc.d-2.2.sh) a go...  
 Just copy it into `/usr/local/etc/rc.d/`, name it `gitlab_ci` and make it executable like `chmod +x gitlab_ci`
 
+### 7 & 8 see [original install instructions](https://github.com/gitlabhq/gitlab-ci/blob/2-2-stable/doc/installation.md)
 
 
