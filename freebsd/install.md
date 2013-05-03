@@ -81,3 +81,8 @@ exit
 
 ### 6. Init Script
 
+Save yourself the hassle of try-and-error with the linux based script and give [this rc.d script](rc.d-2.2.sh) a go...  
+Just copy it into `/usr/local/etc/rc.d/`, name it `gitlab_ci` and make it executable like `chmod +x gitlab_ci`
+
+
+
