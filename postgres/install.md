@@ -3,7 +3,7 @@
 Refer to these steps instead of the ones listed in section 3. of the [Gitlab CI installation instructions](https://github.com/gitlabhq/gitlab-ci/blob/2-2-stable/doc/installation.md)
 
 
-```
+``` sh
 sudo su pgsql
 psql -d postgres
 
@@ -14,7 +14,7 @@ SELECT * FROM pg_user;
 CREATE USER gitlab_ci WITH PASSWORD 'supersecret_password';
 
 # check that the database doesn't exist yet with
-\l
+\l  # (that's a lowercase 'L' as in "List")
 
 # if it doesn't, let's create it and make gitlab_ci the owner:
 CREATE DATABASE "gitlab_ci_production" ENCODING 'UTF8' LC_COLLATE 'C' OWNER = gitlab_ci;
@@ -22,5 +22,4 @@ CREATE DATABASE "gitlab_ci_production" ENCODING 'UTF8' LC_COLLATE 'C' OWNER = gi
 # exit psql console
 \q
 
-
-
+```
