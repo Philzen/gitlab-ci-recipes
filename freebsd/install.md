@@ -1,4 +1,3 @@
-
 ### 0. Add User
 
 ``` sh
@@ -64,7 +63,7 @@ If it still fails at installing v8, install libv8 system-wide and update the bun
 
 The rest of this section again follows the original:
 
-```
+``` sh
 cp config/database.yml.mysql config/database.yml
 # or
 cp config/database.yml.postgresql config/database.yml
