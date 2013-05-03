@@ -1,10 +1,11 @@
 
-
 ### 0. Add User
 
-`sudo mkdir gitlab_ci`
-`sudo pw useradd gitlab_ci -s /usr/sbin/nologin -c "Gitlab CI User"`
-`sudo chown gitlab_ci:gitlab_ci gitlab_ci`
+``` sh
+sudo mkdir gitlab_ci
+sudo pw useradd gitlab_ci -s /usr/sbin/nologin -c "Gitlab CI User"
+sudo chown gitlab_ci:gitlab_ci gitlab_ci
+```
 
 ### 1. Required Packages
 
@@ -25,7 +26,7 @@ NB: This list is unfinished yet.
 ### 2. Installing RVM for gitlab_ci user
 
 
-```
+``` sh
 cd /usr/home/gitlab_ci
 sudo -u gitlab_ci bash
 curl -L https://get.rvm.io | bash -s stable --ruby
@@ -39,7 +40,7 @@ exit
 
 ### 5. Setup
 
-```
+``` sh
 # Act as gitlab_ci user
 sudo -u gitlab_ci bash
 cd ~/gitlab-ci
