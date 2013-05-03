@@ -10,17 +10,17 @@ sudo chown gitlab_ci:gitlab_ci gitlab_ci
 
 Install using your favourite port manager (i.e. portmaster). Needed ports (from install dir `/usr/ports/`) are
 
-ftp/wget
-ftp/curl
-textproc/libxml2
-textproc/libxslt
-databases/redis
-devel/icu
-devel/readline
-devel/git
-textproc/libyaml
+- ftp/wget  
+- ftp/curl  
+- textproc/libxml2  
+- textproc/libxslt  
+- databases/redis  
+- devel/icu  
+- devel/readline  
+- devel/git  
+- textproc/libyaml
 
-NB: This list is unfinished yet.
+NB: This list may not be complete.
 
 ### 2. Installing RVM for gitlab_ci user
 
@@ -44,8 +44,11 @@ exit
 sudo -u gitlab_ci bash
 cd ~/gitlab-ci
 
-# Create a tmp directory inside application
+# Create a tmp and sockets directory inside application
 mkdir -p tmp/pids
+mkdir tmp/sockets
+
+
 
 # Install dependencies
 gem install bundler
